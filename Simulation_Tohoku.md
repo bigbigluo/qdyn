@@ -1,0 +1,67 @@
+# Tohoku cycle simulation #
+
+---
+
+## Summary ##
+
+A conceptual cycle simulation of the Tohoku-Oki earthquake.
+The megathrust event has a recurrence time of ~600 years,
+and the deep brittle asperities produce high-frequency contents during the megathrust event.
+These asperities also produce inter-megathrust M7 earthquakes recurring every several years.
+
+---
+
+## Introduction ##
+
+The 2010 Tohoku Great Earthquake was a devastating disaster to all human beings. It features outstanding characters as huge slip (>50m) towards the trench and high frequency radiations from the deeper part of the subduction zone during the megathrust event (with a possible recurrence time of ~1000 years), and numbers of M7 earthquakes between megathrust events. Here we perform quasi-dynamic simulations trying to reproduce these key features.
+
+
+---
+
+## Multi-cycle 2D simulations without deep brittle asperities ##
+
+To reduce computational cost, it will be wise to perform a multi-cycle simulation in a 2D simulation (i.e. single cell along-dip) first.
+
+This model comes with a velocity-weakening zone between 10km to 32 km in depth, and the effective normal stress linearly increases from surface (the trench) to 20km deep, then remain constant. The whole fault has a Dc (characteristic slip distance) of 0.4m. This parameter combination yields a multi-cycle megathrust events with recurrence time of ~1000 years and huge slip toward trench.
+
+![https://lh4.googleusercontent.com/-F5V_XrTm9q8/UANVNi8Ki3I/AAAAAAAAACk/qDCoCfr-VRM/s804/2d.jpg](https://lh4.googleusercontent.com/-F5V_XrTm9q8/UANVNi8Ki3I/AAAAAAAAACk/qDCoCfr-VRM/s804/2d.jpg)
+
+Figure 1: Simulation of multiple subduction earthquake cycles in 2D:
+
+(a) Assumed depth-dependent distribution of rate-and-state friction parameters (a-b) and effective normal stress (σ).
+(b) Evolution of cumulated slip over several earthquake cycles. Each curve shows the slip as a function of depth at a certain time. The time intervals are irregularly sampled and longer than dynamic rupture timescales. The widely spaced profiles correspond to megathrust earthquakes.
+(c) Evolution of slip during a megathrust earthquake. Same representation as in (b), but with shorter time intervals.
+(d) Moment rate as a function of time over 10 earthquake cycles.
+
+
+---
+
+
+## 3D simulations with deep brittle asperities ##
+This model comes with 11 brittle asperities randomly distributed at the deeper part of the subduction zone. The megathrust event has a recurrence time of ~600 years, and the deep brittle asperities produce high-frequency contains during the megathrust event. These asperities also produce inter-megathrust M7 earthquakes recurring every several years.
+
+
+![https://lh6.googleusercontent.com/-b47smr_ug5g/UANVm65nVHI/AAAAAAAAACs/J5vliT1q-os/s1024/tohoku_asp.jpg](https://lh6.googleusercontent.com/-b47smr_ug5g/UANVm65nVHI/AAAAAAAAACs/J5vliT1q-os/s1024/tohoku_asp.jpg)
+
+Figure 2: 3D simulation with deep brittle asperity:
+
+Left panel: spatial distribution of logarithmic slip-rate normalized by plate velocity on the fault at selected time during and between two megathrust events. Snapshot times are indicated by red circles in the right panel.
+Right panel: Peak slip-rate as a function of time.
+
+
+
+![https://lh5.googleusercontent.com/-JPaTpBXo5eA/USdSArzQ0QI/AAAAAAAAKew/9wnVu30Lhf4/s900/Tohoku_cycle_logo.gif](https://lh5.googleusercontent.com/-JPaTpBXo5eA/USdSArzQ0QI/AAAAAAAAKew/9wnVu30Lhf4/s900/Tohoku_cycle_logo.gif)
+
+Animation: 3D simulation with deep brittle asperity:
+
+
+The upper panel shows the logarithmic slip-rate normalized by the plate velocity.
+The lower panel shows the global peak slip-rate as a function of time, respectively.
+
+
+---
+
+
+[Download Full DEMO Package w/ Result Matrix](http://code.google.com/p/qdyn/downloads/detail?name=QDYN_DEMO_Tohoku_with_Results.zip)
+
+[Download DEMO Package w/o Result Matrix](http://code.google.com/p/qdyn/downloads/detail?name=QDYN_DEMO_Tohoku.zip)
